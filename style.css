@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+a{
+    color:#333333;
+    text-decoration: none;
+}
+/* HEADER MOBILE */
+#home{
+    background-image: url(img/Home.png);
+    color: #ffffff;
+    height: 80vh;
+}
+.content-header{
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.content-header h1{
+    margin: 2.5em 0;
+}
+.logo img{
+    width: 50%;
+}
+.logo-descktop{
+    display: none;
+}
+.button{
+    font-family: 'Montserrat';
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.button a{
+    display: flex;
+    font-size: 0.8em ;
+    font-weight: 300;
+}
+.button p{
+    padding-right: 1em;
+}
+.btn-header a{
+    color: #ffffff;
+    justify-content: center;
+}
+.menu-descktop{
+    display: none;
+}
+.menu{
+    display: block;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #333333;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    padding: 5px;
+    z-index: 2;
+}
+.parti{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+.parti a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.2em;
+    padding-top: 0.8em;
+}
+.btn-all-projects{
+    float: right;
+    margin: 2em 0;
+}
+/* HEADER DESCKTOP */
+@media(min-width:1200px){
+    .menu{
+        display: none;
+    }
+    .menu-descktop{
+        display: block;
+        margin: auto 0 auto auto;
+    }
+    .menu-descktop>ul>a{
+        color: #ffffff;
+        text-decoration: none;
+        padding-right: 2em;
+        font-weight: 300;
+    }
+    .logo-descktop{
+        display: block;
+        width: 5%;
+        margin-left: 1em;
+        margin-top: 2em;
+    }
+    .logo-descktop img{
+        width: 80%;
+    }
+    .logo{
+        display: none;
+    }
+    #home{
+        background-image: none;
+        display: flex;
+        width: 100%;
+    }
+    .content-header{
+        width: 95%;
+        background-image: url(img/Home.png);
+        height: 85vh;
+        text-align: left;
+    }
+    .text-header{
+        color: #ffffff;
+        margin-top: 2em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .content-header h1{
+        margin: 1em 0;
+    }
+    .btn-header a{
+        justify-content: left;
+    }
+    .title{
+        margin: 5em;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header{
+        margin-bottom: 4em;
+    }
+}
+
+/* SECTION ABOUT US - MOBILE */
+.about-section{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.text-aboutus p{
+    text-align: justify;
+    margin-bottom: 1.5em;
+}
+.btn-about{
+    margin: 2.5em 0;
+}
+.img-aboutus img{
+    width: 100%;
+}
+/* SECTION ABOUT US - DESKTOP */
+@media(min-width:1200px){
+    section{
+        width: 90%;
+        float: right;
+    }
+    .about-section{
+        margin-top: 3em;
+        padding: 2em;
+        display: flex;
+        flex-direction: row;
+    }
+    .text-aboutus{
+        width: 50%;
+        padding-right: 5em;
+    }
+    .text-aboutus h2{
+        margin-bottom: 2em;
+    }
+    .text-aboutus p{
+        text-align: justify;
+        line-height: 1.5;
+    }
+    .img-aboutus{
+        width: 50%;
+        margin-right: 3em;
+    }
+    .btn-about{
+        color: #333333;
+        margin-top: 3em;
+        font-size: 1.2em;
+    }
+}
+
+/* PROJECTS - MOBILE */
+.projects-section{
+    margin: 2em;
+}
+.card{
+    height: 600px;
+    color: #ffffff;
+    position: relative;
+    margin: 1em 0;
+}
+.card-text{
+    position: absolute;
+    bottom: 0;
+    margin: 2em;
+}
+.btn-projects a{
+    color: #ffffff;
+    margin-top: 1em;
+}
+.projects-gallery{
+    display: flex;
+    flex-direction: column;
+}
+.PiazzaVarisco411 { 
+    grid-area: PiazzaVarisco411;
+    background-image: url(img/Piazza-411-Varisco/render/render1.jpg);
+}
+.ResidenzaBellavista { 
+    grid-area: ResidenzaBellavista; 
+    background-image: url(img/Residenza-Bellavista/inserimento.png);
+    background-size: cover;
+}
+.ResidenzaTorriGiubiasco { 
+    grid-area: ResidenzaTorriGiubiasco; 
+    background-image: url(img/Residenza-torri-Giubiasco.jpg);
+    background-size: cover;
+}
+.Varisco { 
+    grid-area: Varisco; 
+    background-image: url(img/VARISCO.jpg);
+    background-size: cover;
+}
+.Flora { 
+    grid-area: Flora; 
+    background-image: url(img/Flora/06.jpg);
+    background-size: cover;
+}
+.BrockTower { 
+    grid-area: BrockTower;
+    background-image: url(img/BrockTower/BR\ 01.jpg);
+    background-size: cover;
+}
+@media(min-width:1200px){
+    .projects-gallery{
+        padding-right: 3em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 3em;
+        grid-template-areas:
+        "PiazzaVarisco411 ResidenzaBellavista ResidenzaTorriGiubiasco"
+        "Varisco Flora BrockTower";
+    }
+    .btn-all-projects{
+        margin-right: 2.2em;
+    }
+   
+}
+/* SECTION - PRODUCTION MOBILE */
+#production{
+    margin-top: 5em;
+    width: 100%;
+    background-color: #333333;
+    color: #ffffff;
+    padding-bottom: 2em;
+}
+#production h2{
+    padding-top: 3em;
+    padding-left: 2em;
+}
+.content-production{
+    margin: 3em;
+    text-align: justify;
+}
+.content-production img{
+    margin-bottom: 2em;
+}
+.content-production h3{
+    margin-bottom: 2em;
+}
+/* SECTION - PRODUCTION DESKTOP */
+@media(min-width:1200px){
+    .Production{
+        display: flex;
+        flex-direction: row;
+    }
+    #production h2{
+        padding-left: 5em;
+    }
+    .content-production{
+        padding-left: 5em;
+        margin: 3em;
+        text-align: justify;
+    }   
+}
+
+/* SECTION CONTACT - MOBILE */
+#contact{
+   padding: 2em;
+}
+iframe{
+    margin-top: 2em;
+    width: 100%;
+}
+.text-contact{
+    margin: 2em 0;
+    line-height: 3;
+    margin-bottom: 1em;
+    
+}
+.text-contact p{
+    font-size: 0.9em;
+}
+.text-contact p i{
+    font-size: 1.5em;
+    opacity: 0.8;
+}
+.text-contact :hover{
+    color: #c4c4c4;
+}
+footer{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 8em;
+}
+footer hr{
+   margin-bottom: 1.5em; 
+}
+footer p{
+    width: 90%;
+    margin: 0 auto;
+    color: #8b8b8b;
+}
+/* SECTION CONTACT - DESKTOP */
+@media(min-width:1200px){
+    #contact{
+        width: 95%;
+        padding-right: 4em;
+    }
+    .text-contact{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer hr{
+        display: none;
+    }
+    footer p{
+        text-align: center;
+        opacity: 0.6;
+    }
+    footer{
+        margin-bottom: 3em;
+    }
+}
+
+
