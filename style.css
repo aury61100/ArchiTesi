@@ -123,9 +123,11 @@ a{
     }
     .content-header{
         width: 95%;
+        text-align: left;
+    }
+    .home-background{
         background-image: url(img/Home.png);
         height: 85vh;
-        text-align: left;
     }
     .text-header{
         color: #ffffff;
@@ -205,18 +207,27 @@ a{
 
 /* PROJECTS - MOBILE */
 .projects-section{
+    width: 80%;
     margin: 2em;
 }
 .card{
     height: 600px;
-    color: #ffffff;
     position: relative;
     margin: 1em 0;
 }
 .card-text{
-    position: absolute;
-    bottom: 0;
-    margin: 2em;
+    background-color: rgba(3,3,3,0.5);
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-text:hover{
+	background-color: rgba(3,3,3,0.02);
+    transition: 0.8s;
 }
 .btn-projects a{
     color: #ffffff;
@@ -247,7 +258,7 @@ a{
 }
 .Flora { 
     grid-area: Flora; 
-    background-image: url(img/Flora/06.jpg);
+    background-image: url(img/Flora/08.jpg);
     background-size: cover;
 }
 .BrockTower { 
@@ -268,6 +279,9 @@ a{
     }
     .btn-all-projects{
         margin-right: 2.2em;
+    }
+    .projects-section{
+        width: 90%;
     }
    
 }
@@ -330,12 +344,9 @@ iframe{
     font-size: 1.5em;
     opacity: 0.8;
 }
-.text-contact :hover{
-    color: #c4c4c4;
-}
 footer{
     width: 90%;
-    margin: 0 auto;
+    margin: 3em auto;
     margin-bottom: 8em;
 }
 footer hr{
@@ -368,4 +379,81 @@ footer p{
     }
 }
 
+/* PROJECTS - MOBILE */
+#projects{
+    display: flex;
+    margin: 0;
+}
+.bg-video-wrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 80vh;
+}
+video {
+    min-width: 100%;
+    min-height: auto;
+    z-index: 1;
+}
+.overlay {
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%);
+    background-size: 3px 3px;
+    z-index: 2;
+}
+.projects-page{
+    padding: 2em;
+}
+.projects-page h2{
+    margin-bottom: 2em;
+}
+.projects-gallery-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1.5em;
+    grid-template-areas:
+    "ResidenzaBellavista" 
+    "PiazzaVarisco411"
+    "BrockTower" 
+    "ResidenzaTorriGiubiasco"
+    "Flora"
+    "Varisco ";
+}
 
+/* PROJECTS - DESKTOP */
+
+@media(min-width:1200px){
+    .bg-video-wrap {
+        height: 90vh;
+    }
+    video {
+        min-width: 100%;
+        min-height: 90vh;
+        z-index: 1;
+    }
+    .menu-descktop {
+        text-align: right;
+        margin: 3em;
+        color: #333333;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 3;
+    } 
+
+    .projects-gallery-grid{
+        margin-right: 3em;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "ResidenzaBellavista ResidenzaBellavista PiazzaVarisco411"
+        "BrockTower ResidenzaTorriGiubiasco ResidenzaTorriGiubiasco"
+        "Flora Flora Varisco ";
+    }
+}
