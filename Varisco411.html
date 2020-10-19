@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>ArchiTesi</title>
+</head>
+<body>
+    <header id="home">
+        <div class="logo-descktop">
+            <img src="img/logo.png" alt="ArchiTesi">
+        </div>
+        <div class="content-header Varisco411-background">
+            <div class="dark-shadow">
+                <div class="logo">
+                    <img src="img/logo.png" alt="ArchiTesi">
+                </div>   
+                <div class="text-header ">
+                    <nav class="menu-descktop single-project">
+                        <ul>
+                            <a href="index.html">ABOUT US</a>
+                            <a href="projects.html">PROJECTS</a>
+                            <a href="index.html">PRODUCTION</a>
+                            <a href="index.html">CONTACT</a>
+                        </ul>
+                    </nav>                
+                </div>
+                <div class="menu">
+                    <a href="#aboutus">
+                        <div class="parti">
+                            <img src="img/icone/aboutus-icon.svg" alt="about us">
+                            <a href="index.html">ABOUT US</a>
+                        </div>
+                    </a>                
+                    <a href="project.html">
+                        <div class="parti">
+                            <img src="img/icone/projects-icon.svg" alt="progetti">
+                            <a href="projects.html">PROJECTS</a>
+                        </div>
+                    </a>                
+                    <a href="#production">
+                        <div class="parti">
+                            <img src="img/icone/production-icon.svg" alt="produzione">
+                            <a href="index.html">PRODUCTION</a>
+                        </div>
+                    </a>
+                    <a href="#contact">
+                        <div class="parti">
+                            <img src="img/icone/contact-icon.svg" alt="contatti">
+                            <a href="index.html">CONTACT</a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>            
+    <section class="project-introduction">
+        <p>Project name : <b>Pazza Varisco 411</b></p>
+        <p>Years : <b>2019</b></p>
+        <p>Address : <b>Svizzera, Lugano, Paradiso</b></p>
+    </section>
+
+    <!-- START ROW IMAGE  -->
+    <section class="singleProjects-photos">
+        <h3>HISTORI OF THE PROJECTS</h3>
+        <div class="row">
+            <div class="column">
+                <img src="img/Piazza-411-Varisco/Piante-appartamenti/Appartamento1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+              <img src="img/Piazza-411-Varisco/Piante-appartamenti/Appartamento2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/Piazza-411-Varisco/Piante-appartamenti/Appartamento3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/Piazza-411-Varisco/Piante-appartamenti/Appartamento4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/Piazza-411-Varisco/Piante-appartamenti/Appartamento5.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/Piazza-411-Varisco/Piante-appartamenti/Appartamento6.png" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/Piazza-411-Varisco/Piante-appartamenti/Attico1.png" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/Piazza-411-Varisco/Piante-appartamenti/Attico2.png" style="width:90%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/Piazza-411-Varisco/scala/scala-appertamenti.png " style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/Piazza-411-Varisco/render/render1.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/Piazza-411-Varisco/render/render3.png" style="width:95%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/Piazza-411-Varisco/render/render4.png" style="width:90%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/Piazza-411-Varisco/render/render6.png" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/Piazza-411-Varisco/render/render7.png" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="img/Piazza-411-Varisco/render/Vista-serale-piazza.png" style="width:90%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+          </div>
+          
+            
+          </div>
+          
+          <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+              <div class="mySlides">
+                <img src="img/Piazza-411-Varisco/Piante-appartamenti/Appartamento1.png" style="width:90%">
+              </div>
+              <div class="mySlides">
+                <img src="img/Piazza-411-Varisco/Piante-appartamenti/Appartamento2.png" style="width:90%">
+              </div>
+              <div class="mySlides">
+                <img src="img/Piazza-411-Varisco/Piante-appartamenti/Appartamento3.png" style="width:90%">
+              </div>
+              <div class="mySlides">
+                <img src="img/Piazza-411-Varisco/Piante-appartamenti/Appartamento4.png" style="width:90%">
+              </div>
+              <div class="mySlides">
+                <img src="img/Piazza-411-Varisco/Piante-appartamenti/Appartamento5.png" style="width:90%">
+              </div>
+              <div class="mySlides">
+                <img src="img/Piazza-411-Varisco/Piante-appartamenti/Appartamento6.png" style="width:90%">
+              </div>
+              <div class="mySlides">
+                <img src="img/Piazza-411-Varisco/Piante-appartamenti/Attico1.png" style="width:90%">
+              </div>
+              <div class="mySlides">
+                <img src="img/Piazza-411-Varisco/Piante-appartamenti/Attico2.png" style="width:90%">
+              </div>
+              <div class="mySlides">
+                <img src="img/Piazza-411-Varisco/scala/scala-appertamenti.png" style="width:90%">
+              </div>
+              <div class="mySlides">
+                <img src="img/Piazza-411-Varisco/render/render1.jpg" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <img src="img/Piazza-411-Varisco/render/render3.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <img src="img/Piazza-411-Varisco/render/render4.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <img src="img/Piazza-411-Varisco/render/render6.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <img src="img/Piazza-411-Varisco/render/render7.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <img src="img/Piazza-411-Varisco/render/Vista-serale-piazza.png" style="width:100%">
+              </div>
+
+
+              
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+              <!-- <div class="caption-container">
+                <p id="caption"></p>
+              </div>                   -->
+              
+    </section>
+    <!-- END ROW IMAGE  -->
+
+    <section id="contact">
+        <h2>CONTACT</h2>
+        <div class="contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2772.1275647298357!2d8.94066761583207!3d45.98868220631338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47842dbca3c4e2e3%3A0xc9e2869a45604130!2sVia%20Luciano%20Zuccoli%2019%2C%206900%20Paradiso%2C%20Svizzera!5e0!3m2!1sit!2sit!4v1601890490300!5m2!1sit!2sit" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div class="text-contact">
+            <p><i class="far fa-envelope"></i>  info@architesi.ch</p>
+            <p><i class="fas fa-at"></i> carra@architesi.ch</p>
+            <p><i class="fab fa-whatsapp"></i> +41 91 980 43 03</p>
+            <p><i class="fas fa-map-marker-alt"></i> Via Luciano Zuccoli 19, 6900 Paradiso</p>
+        </div> 
+        <footer>
+            <hr>
+            <p>© 2020 ARCHITESI | impresa edile</p>
+            <p>Copyright © 2020 Architesi</p>
+        </footer>       
+    </section>   
+
+    <script src="slide.js"></script>
+</body>
+</html>
