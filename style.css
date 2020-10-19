@@ -14,8 +14,10 @@ a{
     text-decoration: none;
 }
 /* HEADER MOBILE */
-#home{
+.img-index-mobile{
     background-image: url(img/Home.png);
+}
+#home{
     color: #ffffff;
     height: 80vh;
 }
@@ -384,7 +386,10 @@ footer p{
     display: flex;
     margin: 0;
 }
-.bg-video-wrap {
+.bcg-progect{
+    background-image: url(img/Piazza-411-Varisco/render/Vista-serale-piazza.png);
+}
+/* .bg-video-wrap {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -404,7 +409,7 @@ video {
     background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%);
     background-size: 3px 3px;
     z-index: 2;
-}
+} */
 .projects-page{
     padding: 2em;
 }
@@ -428,25 +433,19 @@ video {
 /* PROJECTS - DESKTOP */
 
 @media(min-width:1200px){
-    .bg-video-wrap {
+    .project-background{
+        background-image: url(img/Residenza-torri-Giubiasco.jpg);
+        background-size: cover;
+    }
+    /* .bg-video-wrap {
         height: 90vh;
     }
     video {
         min-width: 100%;
         min-height: 90vh;
         z-index: 1;
-    }
-    .menu-descktop {
-        text-align: right;
-        margin: 3em;
-        color: #333333;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 3;
-    } 
+    } */
+    
 
     .projects-gallery-grid{
         margin-right: 3em;
@@ -460,6 +459,10 @@ video {
 
 
 /* VARISCO411 - MOBILE */
+    .bcg-Verisco411{
+        background-image: url(img/Piazza-411-Varisco/render/render2.jpg);
+        background-size: cover;
+    }
     .project-introduction p{
         padding: 1em 0 ;
     }
@@ -469,8 +472,11 @@ video {
         width: 90%;
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
     }
-
+    .column {
+        margin: 1em auto;
+    }
     .modal {
         display: none;
         position: fixed;
@@ -581,16 +587,17 @@ video {
     }
 /* VARISCO411 - DESKTOP */
 @media(min-width:1200px){
+    .Varisco411-background{
+        background-image: url(img/Piazza-411-Varisco/render/render2.jpg);
+        background-size: cover;
+    }
     .row{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         margin: 0 auto;
     }
-    .Varisco411-background{
-        background-image: url(img/Piazza-411-Varisco/render/render2.jpg);
-        background-size: cover;
-    }
+    
     .dark-shadow{
         background-color: rgba(3,3,3,0.4);
         width: 100%;
