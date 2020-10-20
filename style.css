@@ -1,3 +1,10 @@
+.fade-in{
+    opacity: 0;
+    transition: 1s ease-in;
+}
+.fade-in.appear{
+    opacity: 1;
+}
 *{
     margin: 0;
     padding: 0;
@@ -13,6 +20,7 @@ a{
     color:#333333;
     text-decoration: none;
 }
+
 /* HEADER MOBILE */
 .img-index-mobile{
     background-image: url(img/Home.png);
